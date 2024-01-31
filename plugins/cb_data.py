@@ -50,7 +50,6 @@ async def doc(bot,update):
      used = used_["used_limit"]
      date = used_["date"]	
      name = new_name.split(":-")
-     new_filename = name[1]
      file_path = f"downloads/{new_filename}"
      message = update.message.reply_to_message
      file = message.document or message.video or message.audio
